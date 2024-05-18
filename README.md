@@ -1,2 +1,0 @@
-# nextjs-dashboard
-Learning NextJS
