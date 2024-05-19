@@ -23,3 +23,9 @@
    1. You could stream the whole page like we did with loading.tsx... but that may lead to a longer loading time if one of the components has a slow data fetch.
    2. You could stream every component individually... but that may lead to UI popping into the screen as it becomes ready.
    3. You could also create a staggered effect by streaming page sections. But you'll need to create wrapper components.
+
+
+## CSS Notes
+1. Paddings: `px-3 py-11`
+2. Screen overrides: (mobile) `xs: py-11` (desktop)`md: px-3`
+3. Margins: `mr-2`
