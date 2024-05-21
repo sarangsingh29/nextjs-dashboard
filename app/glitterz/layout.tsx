@@ -1,9 +1,12 @@
-import SideNav from '@/app/ui/dashboard/sidenav';
+import {up_clsx} from "@/app/glitterz/ui/cslx/borderToggleClsx";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({children}: { children: React.ReactNode }) {
     return (
-        <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-            <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
-        </div>
+        <div className={up_clsx([
+            "flex flex-col",
+            "justify-center",
+            "h-screen",
+            "bg-gradient-to-l from-blue-100 to-blue-200"
+        ], false)}>{children}</div>
     );
 }

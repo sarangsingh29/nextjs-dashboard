@@ -29,3 +29,6 @@
 1. Paddings: `px-3 py-11`
 2. Screen overrides: (mobile) `xs: py-11` (desktop)`md: px-3`
 3. Margins: `mr-2`
+4. Flex containers: `flex`
+   1. Align-items - Align items on cross-axis
+   2. Justify-content - Align items on main-axis

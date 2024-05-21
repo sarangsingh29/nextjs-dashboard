@@ -1,11 +1,14 @@
 import clsx from "clsx";
 
-const showBorder = true
+const showBorder = false
 
-export function up_clsx(classes: string[]) {
+export function up_clsx(classes: string[], show: boolean = showBorder) {
     return clsx(
         ...classes,
-        border
+        border(show)
     )
 }
-export const border = {'border border-amber-500 rounded-2xl': showBorder}
+
+export function border(show: boolean = showBorder) {
+    return {'border border-black rounded-2xl': show}
+}
