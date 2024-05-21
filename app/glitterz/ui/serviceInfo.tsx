@@ -30,16 +30,15 @@ export default function ServiceInfo() {
         <div className={up_clsx([
             "flex flex-row flex-wrap",
             "justify-center",
-            "w-2/3"
-        ], false)}>
+            "w-2/3 h-screen",
+            "overflow-scroll",
+        ], true)}>
             <ServiceInfoCard {...services.serviceA}/>
             <ServiceInfoCard {...services.serviceB}/>
             <ServiceInfoCard {...services.serviceB}/>
             <ServiceInfoCard {...services.serviceA}/>
             <ServiceInfoCard {...services.serviceA}/>
             <ServiceInfoCard {...services.serviceB}/>
-            <ServiceInfoCard {...services.serviceB}/>
-            <ServiceInfoCard {...services.serviceA}/>
         </div>
 
     )
@@ -47,9 +46,9 @@ export default function ServiceInfo() {
 
 function ServiceInfoCard(props: ServiceInfoProps) {
     return (<a href={"#"} className={up_clsx([
-            "w-2/5",
+            "md:w-2/5",
             "m-1",
-            "p-1",
+            "md:p-1",
             "border-2"
         ], true)}>
             <div className={up_clsx([
@@ -58,13 +57,13 @@ function ServiceInfoCard(props: ServiceInfoProps) {
                 <Image
                     src={props.imagePath}
                     alt={`${props.serviceName}'s image`}
-                    className="mr-4 rounded-full"
+                    className="md:mr-4 rounded-full"
                     width={100}
                     height={100}
                 />
                 <div className={up_clsx([
                     "flex flex-col",
-                    "p-1",
+                    "md: p-1",
                     "justify-center",
                 ], false)}>
                     <p className="truncate text-sm font-semibold md:text-base">

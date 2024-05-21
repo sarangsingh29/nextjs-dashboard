@@ -7,8 +7,8 @@ export default function Glitterz() {
         <div className={up_clsx([
             "flex flex-col",
             "w-1/3 max-h-screen",
-            "m-5",
-            "p-0.5",
+            "md:m-5",
+            "md:p-0.5",
             "justify-center"
         ], false)}>
             <div className={up_clsx([

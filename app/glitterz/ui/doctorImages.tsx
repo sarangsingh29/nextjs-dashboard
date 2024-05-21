@@ -56,6 +56,7 @@ function DoctorImage(props: ImageProps) {
                 height={70}
             />
             <div className={up_clsx([
+                "md:block", "hidden",
                 "flex flex-col",
                 "items-center",
                 "p-1"
